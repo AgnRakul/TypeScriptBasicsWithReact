@@ -29,3 +29,25 @@ const logNumber: (i: number) => void = (i: number) => {
 const json = '{"x":10, "y":10}';
 const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates);
+
+// 2) When we declare a variable in one line
+// and initalizate it later
+let words = ["a", "b", "c", "d", "e"];
+let foundWords: boolean;
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === "c") {
+    foundWords = true;
+  }
+}
+
+// 3) Variable whose types cannot be inferred correctly
+let number = [-10, -2, 12];
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < number.length; i++) {
+  if (number[i] > 0) {
+    numberAboveZero = number[i];
+    console.log(numberAboveZero);
+  }
+}
