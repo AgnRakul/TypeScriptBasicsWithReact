@@ -1,0 +1,3 @@
+Models as to been seprated from UI files
+Network calls should be seprated from UI files
+Architurer Need to Follow MVC(MODEL VIEW CONTROLLER)
